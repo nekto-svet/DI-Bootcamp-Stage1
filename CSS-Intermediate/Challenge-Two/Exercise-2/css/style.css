@@ -1,0 +1,21 @@
+.wrap{
+    width: 80%;
+}
+
+.violet, .item {
+    display: inline-block;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+.violet {
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.second_wrap{
+    width: 25px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
