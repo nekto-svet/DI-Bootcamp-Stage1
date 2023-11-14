@@ -1,0 +1,249 @@
+*{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+nav {
+    position: fixed;
+    z-index: +1;
+    min-height: 5%;
+    background-color: #110b0b;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* I added nowrap here, but the "what happened" menu item still splits into two lines when viewed on a small screen. What to do? :( */
+    /* in the next rule you can see the attribute white-space was added. This and using responsive size for the font-size (vw) solves the proble ;) */
+}
+
+.menu .menu_link {
+    display: block;
+    font-family: 'Agbalumo', sans-serif;
+    color: #5787c5;
+    font-size: 2vw; 
+    white-space: nowrap;
+}
+
+
+
+.main {
+    min-height: 800px;
+    background-color: #110b0b;
+    background-image: url("https://static.israel21c.org/www/uploads/2023/10/Rachel-Edri-1024x855.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+}
+main .container{
+    margin-top: 5%;
+    height: 100vh;
+}
+
+.main .main_text {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 3rem;
+}
+
+.main .main_text h1{
+    color: #DADBDD;
+    font-size: 5vw;
+}
+
+.main .main_text h2 {
+    font-family: 'Agbalumo', sans-serif;
+    color: #5787c5;
+    font-size: 4vw;
+}
+
+#bio{
+    padding: 0;
+    background-color: #dfe3ef ;
+    padding-top: 5%;
+}
+
+
+#bio .container{
+    margin: 0;
+}
+
+.row-bio{
+    margin-bottom: 0; /*added because it did a white space*/
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+#bio img{
+    /* min-height: 853px; */
+    height: 85vh; /*related to the image siza*/
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain; /* new*/
+    
+}
+
+.col{
+    font-size: 2vw;
+    width: 50vw;
+    padding: 2%;
+}
+.col h2 {
+    text-align: center;
+}
+
+#bio ul li h2 {
+    list-style-type: circle;
+    padding-top: 30px;
+    font-size: 2.5vw;
+}
+
+
+#what_happened {
+    background-image: linear-gradient(to bottom right,#000,#52595D);
+    padding: 70px 0px 30px 0px;
+}
+
+#what_happened h2 {
+    color: #DADBDD;
+    margin: 0px 0px 50px 20px;
+    text-align: center;
+}
+
+#what_happened p {
+    font-size: 20px;
+    color: #DADBDD;
+    line-height: 40px;
+    margin-top: -9px;
+}
+
+#what_happened .what_happened_img_title {
+    color: #8C8C8C;
+}
+
+#what_happened .what_happened_text2 p:first-child {
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 25px;
+    color: #5787c5;
+    margin-top: 30px;
+}
+
+
+
+
+
+.line1 {
+    height: 8px;
+    background-color: #5787c5;
+}
+
+
+
+#glory {
+    padding-top: 80px;
+}
+
+#glory h2 {
+    margin: 0px 0px 50px 20px;
+}
+
+#glory .glory_item2 {
+    margin-bottom: 80px;
+}
+
+
+#recipe {
+    position: relative; /* This makes sure that the pseudo-element is positioned in relation to its parent */
+    z-index: 0;
+}
+
+#recipe::before {
+    content: ''; /* This comes with the peseudo-element before:: */
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKsl0s0pTO9-xIMXPcp2Z3_vxph_nNqG1ig&usqp=CAU" alt="cookies" class="recipe_img"'); /* Add your image URL here */
+    background-size: cover;
+    opacity: 0.4; /* This sets the opacity of the image */
+    z-index: -1; /* This ensures that the image stays in the background */
+}
+
+
+
+/* #recipe .recipe_img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;    
+} */
+
+#recipe .container {
+    padding-top: 80px;
+}
+
+#recipe h2 {
+    margin: 0px 0px 10px 20px;
+}
+
+#recipe .recipe_subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#recipe .recipe_main {
+    margin: 60px 0px 30px 0px;
+}
+
+#recipe .recipe_main ul, ol  {
+    color: #2F539B;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#recipe .recipe_main ul li {
+    list-style: circle;
+}
+
+#recipe .recipe_main li {
+    color:#000;
+    font-size: 24px;
+     line-height: 40px;
+}
+
+#recipe .recipe_quote{
+    /* margin: 30px 0px 0px 0px; padding will give you a better result */
+    padding: 7%;
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 25px;
+    color: #2F539B;
+}
+
+
+footer{
+    height: 100px;
+    background-color: #110b0b;
+}
+
+footer a{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}

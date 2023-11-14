@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Challenge || Materialize CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- I decided to connect only the necessary fonts to the project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+    <header>
+        <!--    Menu partly from Materialize (for example color, partly made with CSS (font, color of font, fixation, height, justify-content ets)      -->
+        <nav class="black">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <ul class="menu">
+                            <li><a href="#" class="menu_link">Home</a></li>
+                            <li><a href="#bio" class="menu_link">Bio</a></li>
+                            <li><a href="#what_happened" class="menu_link">What happend</a></li>
+                            <li><a href="#glory" class="menu_link">Glory</a></li>
+                            <li><a href="#recipe" class="menu_link">Recipe</a></li>
+                        </ul>
+                    </div>
+                </div> 
+             </div>
+        </nav>
+    </header>
+
+    <!-- "Nav" is still covering part of the "main" section. I removed the "main" section from the "header", but it didn’t help. Adding margin-top to "main" doesn't helps too :( -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m5 main_text">
+                    <h1>Rachel Edri and her cookies</h1>
+                    <h2>Hero of Israel</h2>
+                </div>   
+            </div>
+        </div>
+    </div>
+ 
+
+    <div id="bio">
+        <div class="container">
+            <div class="row-bio">
+                <div class="col">
+                    <h2>Biography</h2>
+                    <ul> 
+                      <li> Rachel was born in 1959 in Ofakim. She grew up in a family of 14 children. </li>
+                      <li>In the army she served in Squadron 102 at the Hatzeri base as a technical clerk.</li>
+                      <li>In 1982 she married David Adri, a truck driver and operator.</li>
+                      <li>Adri is a mother of three: Hanit, Avitar and Tal (two of her sons are policemen) and a grandmother of three grandchildren.</li>
+                    </ul>
+                </div>
+                <img src="https://ynet-pic1.yit.co.il/picserver5/crop_images/2023/10/16/HkWbrkS5Wp/HkWbrkS5Wp_0_0_3000_2499_0_x-large.jpg" alt="picture of Rachel and David Edri">
+            </div>
+        </div>
+    </div>
+
+    <div id="what_happened">
+        <div class="container">
+            <h2>What happend?</h2>
+            <div class="row">
+                <div class="col s12 m5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Foreign_Secretary_James_Cleverly_visits_Israel_%2853249887217%29.jpg/1280px-Foreign_Secretary_James_Cleverly_visits_Israel_%2853249887217%29.jpg" alt="Rachel's home" class="col s12 m12" >
+                    <div class="what_happened_img_title"> Isaeli foreign Minister Eli Cohen and  British Foreign Minister James Calverly visiting Rachel Adri's home</div>
+                </div>
+                <div class="col s12 m7 what_happened_text1">
+                    <p>Around 6:30 am on Saturday, 7th of October 2023, the Hamas terrorists launched an attack on Israel . Hundreds of terrorists infiltrated to Israeli settlements. During the infiltration into Israel, the terrorists arrived at Ofakim around 6:45 in the morning.<br><br>Rachel and her husband were surrounded in thrir home by the five armed Hamas terrorists. The terrorists had many weapons , including grenades, AK-47 assault rifles, and a Lao missile.</p>
+                </div>
+                <div class="col s12 m12 what_happened_text2">
+                    <p>“I started to talk to them. Have you had something to drink? Would you like tea or coffee?”</p>
+
+                    <p>Undeterred by the ever-present danger, Edri began to talk with her captors, asking them where they were from and trying to dissuade them from their planned murder. As the afternoon wore on, Edri offered to bandage the injured hand of one of the terrorists, and, seeking to soothe him, brought him water as well as some canned pineapple. “You look pallid, “she told him. Take something to eat; you will feel better.” Meanwhile, an elite police force had arrived outside their house, accompanied by her police officer son, who had gotten word of the attack and rushed to his parents' house. An officer attempted to negotiate with the terrorists to get Rachel released to no avail.<br><br>Just in the early morning of the next day, the rescue team, aided by a drone and the outline of the house that their son had drawn, burst into the home through the roof with a special rescue dog, killing all four terrorists. The Edris escaped unscathed. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- just a beautiful divide line -->
+    <div class="line1"></div>
+
+  
+    <!--  4 cards from Materialiaze in 2 rows -->
+    <div id="glory">
+        <div class="container">
+            <h2>Glory</h2>
+            <div class="row glory_item1">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://pic1.calcalist.co.il/picserver3/crop_images/2023/10/18/BkEcXvabp/BkEcXvabp_0_0_800_534_0_large.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Rachel with US President Joe Biden</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeGu7QX3v0yaHd_BnIT2cVSXVEa7LTylGJWZRLlTftHzcQJr-cKVIAhAFATvhzL41bHY&usqp=CAU">
+                        </div>
+                        <div class="card-content">
+                            <p>People get tattoos of Rachel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row glory_item2">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT17kXgE9caxsGxBuc68IaSqnEla-l6G5FaTSvMJjioFC1P8QFZyuBg_NCoCexH8u2PHU&usqp=CAU">
+                        </div>
+                        <div class="card-content">
+                            <p>Murals of Rachel</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://img.haarets.co.il/bs/0000018b-13dd-df09-a9db-5bfde4340000/ba/97/7620ee2f4b80bb4e64b4099d1a1e/10885.jpg?height=630&width=1200">
+                        </div>
+                        <div class="card-content">
+                            <p>Rachel gives an interview to Channel 13</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- another beautiful divide line -->
+    <div class="line2"></div>
+
+    <div id="recipe">
+    <!--   I used a picture in HTML as a background, because it's a picture from the internet, which needed to change the opacity. I only know a way to do it  with position: absolute, z-index: -1, opacity: 0.4. If this were a picture specially prepared for the project, then I could use it as a background in CSS.     -->
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKsl0s0pTO9-xIMXPcp2Z3_vxph_nNqG1ig&usqp=CAU" alt="cookies" class="recipe_img"> -->
+        <div class="container">
+            <h2>Recipe</h2>
+            <div class="recipe_subtitle">The Cookies That Helped Save Rachel Edri From Hamas Terrorists</div>
+            <div class="row recipe_main">
+                <ul class="col s12 m6"> Ingredients
+                    <li>2 eggs</li>
+                    <li>1 cup sugar</li>
+                    <li>½ cup oil</li>
+                    <li>2 cups, plus 2 Tbsp. flour</li>
+                    <li>½ tsp. baking soda</li>
+                    <li>¾ cup chocolate chips</li>
+                </ul>
+
+                <ol class="col s12 m6"> Directions
+                    <li>Preheat the oven to 350°F (180°C).</li>
+                    <li>Beat the eggs and sugar together.</li>
+                    <li>Add the rest of the ingredients and mix until a sticky dough is formed.</li>
+                    <li>Make balls the size of a ping-pong ball, and place on a cookie sheet lined with parchment paper [I used a 1 tbsp measuring spoon to scoop the cookies because the batter was quite sticky.]</li>
+                    <li>Bake for about 14 minutes.</li>
+                    <li>The cookies will come out of the oven soft, but will firm up as they cool.</li>
+                </ol>
+            </div>
+            <div class="recipe_quote">“If they're hungry, they'll be more angry,” she told herself.</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%9C_%D7%90%D7%93%D7%A8%D7%99" class="waves-effect red lighten-2 btn-small"><i class="material-icons right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Wikipedia%27s_W.svg/2048px-Wikipedia%27s_W.svg.png" alt="wiki"></i>More about Rachel on</a>
+    </footer>
+
+</body>
+</html>
