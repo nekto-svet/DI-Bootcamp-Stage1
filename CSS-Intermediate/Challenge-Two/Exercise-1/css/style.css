@@ -1,0 +1,31 @@
+.wrap, .red, .blue, .yellow{
+    border: solid 2px;
+}
+
+.wrap{
+    width: 800px;
+    height: 700px;
+    display: flex;
+    padding: 20px 25px 20px 13px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.red {
+    width: 180px;
+    height: 150px;
+    background-color:red;
+}
+
+.blue{
+    width: 580px;
+    height: 150px;
+    background-color:blue;
+}
+
+.yellow{
+    width: 793px;
+    height: 150px;
+    background-color: yellow;
+}
