@@ -52,6 +52,7 @@
         max-height: 12vw;
         background-color: #000000;
         position: fixed;
+        z-index: +2;
         display: inline-block;
     }
 
@@ -153,12 +154,12 @@
 
 #bio{
     /* padding: 0; */
-    height: 100vh; 
+    min-height: 100vh; 
     background-color: #dfe3ef ;
     padding-top: 5%;
     background-image: url(../img/bio_background.jpg);
     background-repeat: no-repeat;
-    background-position: 0% 100%;
+    background-position: 15% 100%;
     background-size: 100vh;
 }
 
@@ -167,6 +168,8 @@
 }
 
 #bio .content {
+    
+    margin-left: 50%;
     /* display: flex;
     justify-content: space-around; */
 
@@ -176,7 +179,7 @@
 #bio h2 {
     /* text-align: center; */
     font-size: 3vw;
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
 }
 
 /* 
@@ -190,14 +193,6 @@
 }
  */
 
-#bio img{
-    /* width: 30vw; */
-    /* height: 100vw; */
-    /* margin: 0;
-    background-repeat: no-repeat;
-    background-size: contain;  */
-    
-}
 
 /* .col{
     font-size: 2vw;
@@ -215,12 +210,51 @@
     font-size: 2vw;
 }
 
-
-@media all and (max-width: 1142px) {
-    #bio{
-        background-image: none;
+@media all and (min-width: 1267px) {
+    #bio img {
+        display: none;
     }
     
+}
+
+@media all and (max-width: 1266px) {
+    #bio{
+        background-image: none;
+        min-height: none;
+
+    }
+
+    
+    #bio .content {
+        display: block;
+        margin: 0 auto;
+        /* margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%); */
+    }
+    
+    #bio h2 {
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    #bio .content img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+        z-index: +1;
+
+    }
+
+    #bio .content ul {
+        width: 100%;
+    }
+
+    #bio .content ul li {
+        white-space: normal;
+    }
+
 }
 
 
