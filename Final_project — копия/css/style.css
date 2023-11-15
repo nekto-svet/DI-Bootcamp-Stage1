@@ -5,11 +5,11 @@
 }
 
 
-@media all and (min-width: 691px) {
+@media all and (min-width: 801px) {
 
     .big_nav {
         position: fixed;
-        z-index: +1;
+        z-index: +2;
         min-height: 90px;
         width: 100vw;
         padding-top: 10px;
@@ -20,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items:center;
+        list-style: none;
     }
 
     .menu .menu_link {
@@ -30,6 +31,7 @@
         white-space: nowrap;
         text-decoration: none;
         border: dotted 3px #3f3e3e;
+        padding: 0px 4px 0px 4px;
     }
 
     .dropdown {
@@ -40,8 +42,7 @@
 
 
 
-
-@media all and (max-width: 690px) {
+@media all and (max-width: 800px) {
 
     nav .big_nav {
         display: none;
@@ -49,7 +50,7 @@
       
     .dropdown {
         width: 100vw;
-        max-height: 12vw;
+        max-height: 15vw;
         background-color: #000000;
         position: fixed;
         z-index: +2;
@@ -60,7 +61,7 @@
         background-color: #000000;
         color: #5787c5;
         font-family: 'Agbalumo', sans-serif;
-        padding: 0.5vw 0px 5vw 10vw;
+        padding: 0.5vw 5vw 0vw 10vw;
         font-size: 6vw;
         cursor: pointer;
     }
@@ -74,7 +75,6 @@
         z-index: +2;
     }
       
-
     .dropdown-content a {
         color: black;
         font-size: 18px;
@@ -90,35 +90,21 @@
     .dropdown:active .dropdown-content {
         display: block;
     }
-
-/*       
-      Change the background color of the dropdown button when the dropdown content is shown
-      .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
-      } */
 }
-
-
 
 
 .main {
     width: 100vw;
-    min-height: 100vh;
     background-color: #110b0b;
     background-image: url("../img/main_background.jpg");
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: 100% 0%;
 }
-/* main .container{
-    margin-top: 5%; */
-    /* height: 100vh; */
-/* } */
 
 .main .main_text {
     text-align: center;
-    margin-top: 250px;
-    margin-bottom: 50px;
+    margin-top: 20%;
+    margin-bottom: 20%;
     font-size: 3rem;
 }
 
@@ -134,9 +120,9 @@
 }
 
 
-@media all and (max-width: 948px) {
+@media all and (max-width: 1030px) {
     .main {
-        min-height: calc(100vw);
+        min-height: 100vw;
         background-image: url("../img/main_background_min.jpg");
         background-position: 0% 0%;
         background-size: 100vw;
@@ -153,61 +139,33 @@
 
 
 #bio{
-    /* padding: 0; */
-    min-height: 100vh; 
     background-color: #dfe3ef ;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     background-image: url(../img/bio_background.jpg);
     background-repeat: no-repeat;
     background-position: 15% 100%;
-    background-size: 100vh;
-}
-
-#bio .container{
-    /* margin: 0; */
+    background-size: calc(400px + 20%);
 }
 
 #bio .content {
-    
     margin-left: 50%;
-    /* display: flex;
-    justify-content: space-around; */
-
 }
 
 
 #bio h2 {
-    /* text-align: center; */
-    font-size: 3vw;
-    /* margin-left: 3vw; */
+    font-size: 5vw;
+    margin: 8% 0 0 0;
 }
-
-/* 
-.row-bio{
-    margin-bottom: 0; 
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
- */
-
-
-/* .col{
-    font-size: 2vw;
-    width: 50vw;
-    padding: 2%;
-} */
 
 #bio ul {
     width: 40vw;
+    margin: 0 0 5% 0;
 }
 
 #bio ul li {
     list-style-type: circle;
     padding-top: 30px;
-    font-size: 2vw;
+    font-size: calc(25px + 0.3vw);
 }
 
 @media all and (min-width: 1267px) {
@@ -215,27 +173,27 @@
         display: none;
     }
     
+    #bio hr {
+        max-width: 200px;
+    }
 }
 
 @media all and (max-width: 1266px) {
     #bio{
         background-image: none;
-        min-height: none;
-
+        min-height: 10px;
     }
 
     
     #bio .content {
         display: block;
         margin: 0 auto;
-        /* margin-left: 0;
-        left: 50%;
-        transform: translateX(-50%); */
     }
     
     #bio h2 {
         text-align: center;
         font-size: 5vw;
+        margin-top: 10%;
     }
     
     #bio .content img {
@@ -244,50 +202,91 @@
         transform: translateX(-50%);
         width: 50vw;
         z-index: +1;
+    }
 
+    #bio .content hr {
+        margin: 0px;
     }
 
     #bio .content ul {
-        width: 100%;
+        padding: 10% 10% 10% 10%;
+        width: 90%;
+        margin: 0px 0px 40px 5vw;
+     
     }
 
     #bio .content ul li {
-        white-space: normal;
+        font-size: calc(12px + 1.5vw);
     }
-
 }
+
+
 
 
 #what_happened {
     background-image: linear-gradient(to bottom right,#000,#52595D);
-    padding: 70px 0px 30px 0px;
-}
-
-#what_happened h2 {
-    color: #DADBDD;
-    margin: 0px 0px 50px 20px;
-    text-align: center;
-}
-
-#what_happened p {
-    font-size: 20px;
-    color: #DADBDD;
-    line-height: 40px;
-    margin-top: -9px;
+    padding: 6% 0px 4% 0px;
 }
 
 #what_happened .what_happened_img_title {
     color: #8C8C8C;
+    font-size: calc(12px + 1vw);
+}
+
+#what_happened h2 {
+    color: #DADBDD;
+    font-size: 5vw;
+    margin-bottom: 3%;
+}
+
+#what_happened .first {
+    display: flex;
+    justify-content: space-between;
+}
+
+#what_happened .first .what_happened_img {
+    width: 48%;
+}
+
+#what_happened .first .what_happened_text1 {
+    width: 48%;
+}
+
+#what_happened p {
+    font-size: calc(17px + 0.5vw);
+    color: #DADBDD;
+    line-height: 40px;
 }
 
 #what_happened .what_happened_text2 p:first-child {
     text-align: center;
     font-family: 'Agbalumo', sans-serif;
-    font-size: 25px;
+    font-size: calc(17px + 0.6vw);
     color: #5787c5;
     margin-top: 30px;
 }
 
+@media all and (max-width: 1266px) {
+
+    #what_happened .first .what_happened_img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    #what_happened .first .what_happened_text1 {
+        width: 100%;
+    }
+
+    #what_happened p {
+        font-size: calc(17px + 1vw);
+    }   
+    
+    #what_happened .what_happened_text2 p:first-child {
+        font-size: calc(17px + 1.2vw);
+    }    
+}
 
 
 
@@ -295,6 +294,11 @@
 .line1 {
     height: 8px;
     background-color: #5787c5;
+}
+
+.line1 {
+    height: 8px;
+    background-color: #cc6f6f;
 }
 
 
@@ -316,6 +320,10 @@
     width: 200px;
 }
 
+
+
+
+
 #recipe {
     position: relative; /* This makes sure that the pseudo-element is positioned in relation to its parent */
     z-index: 0;
@@ -331,7 +339,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKsl0s0pTO9-xIMXPcp2Z3_vxph_nNqG1ig&usqp=CAU" alt="cookies" class="recipe_img"'); /* Add your image URL here */
+    background-image: url('../img/reciepe_background.jpeg'); /* Add your image URL here */
     background-size: cover;
     opacity: 0.4; /* This sets the opacity of the image */
     z-index: -1; /* This ensures that the image stays in the background */
@@ -347,26 +355,39 @@
 } */
 
 #recipe .container {
-    padding-top: 80px;
+    padding-top: 8%;
 }
 
 #recipe h2 {
-    margin: 0px 0px 10px 20px;
+    font-size: 5vw;
+    /* margin: 8% 0 0 0; */
 }
 
 #recipe .recipe_subtitle {
-    font-size: 20px;
+    font-size: calc(17px + 1.3vw);
     font-weight: 500;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #recipe .recipe_main {
-    margin: 60px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 8% 0px 3% 0px;
 }
 
-#recipe .recipe_main ul, ol  {
+#recipe .recipe_main ul  {
+    display: inline-block;
+    width: 45%;
     color: #2F539B;
-    font-size: 30px;
+    font-size: calc(14px + 1.2vw);
+    font-weight: 500;
+}
+
+#recipe .recipe_main ol {
+    display: inline-block;
+    width: 50%;
+    color: #2F539B;
+    font-size: calc(14px + 1.2vw);
     font-weight: 500;
 }
 
@@ -376,8 +397,8 @@
 
 #recipe .recipe_main li {
     color:#000;
-    font-size: 24px;
-     line-height: 40px;
+    font-size: calc(12px + 1vw);
+     line-height: 60px;
 }
 
 #recipe .recipe_quote{
@@ -385,8 +406,25 @@
     padding: 7%;
     text-align: center;
     font-family: 'Agbalumo', sans-serif;
-    font-size: 25px;
+    font-size: calc(17px + 1.2vw);
     color: #2F539B;
+}
+
+@media all and (max-width: 1266px) {
+    #recipe .recipe_main ul  {
+        width: 100%;
+    }
+
+    #recipe .recipe_main ol  {
+        width: 100%;
+    }
+
+    #recipe .recipe_main li {
+        color:#000;
+        font-size: calc(17px + 1vw);
+         line-height: 30px;
+    }
+    
 }
 
 
